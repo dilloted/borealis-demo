@@ -99,4 +99,5 @@ armory deploy start -f deploy-infra.yml -c $1 -s $2
 
 # also tried: --set kube-state-metrics.metricLabelsAllowlist=pods=[*]
 # k -n=borealis-demo-infra port-forward service/prometheus-kube-prometheus-prometheus 9090
+#test
 # example prometheus query for CPU load for pods in a replica set. container_cpu_load_average_10s{name=~"k8s_POD_hostname-5b8bc655f6.+"}
